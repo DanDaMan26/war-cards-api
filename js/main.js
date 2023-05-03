@@ -1,5 +1,8 @@
-let deckId = ''
-
+ let deckId = ''
+ let player1Score = 0
+ let player2Score = 0
+//  document.querySelector('#player1 span').innerText = `Score: ${player1Score}`
+//  document.querySelector('#player2 span').innerText = `Score: ${player2Score}`
 
 fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
   .then(res => res.json()) // parse response as JSON
@@ -11,8 +14,15 @@ fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
       console.log(`error ${err}`)
   });
 
+// document.querySelector('#play').addEventListener('click', startGame())
+
+// function startGame(){
+//   document.querySelector('section').classList.toggle('hidden')
+// }
+//game mechnanics
 
 document.querySelector('button').addEventListener('click', drawTwo)
+
 
 function drawTwo(){
   const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`
@@ -27,8 +37,10 @@ function drawTwo(){
         let player2Val = convertToNum(data.cards[1].value)
         if(player1Val > player2Val){
           document.querySelector('h3').innerText = 'Player 1 Wins'
+          player1Score += 1
         } else if (player1Val < player2Val){
           document.querySelector('h3').innerText = 'Player 2 Wins'
+          player2Score += 1
         } else {
           document.querySelector('h3').innerText = 'Time for war!'
         }
