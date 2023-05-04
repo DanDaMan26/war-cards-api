@@ -1,28 +1,21 @@
-War
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# War
+My take on the classic card game.
 
-Link to project: http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://war-cards-api.netlify.app/
 
-alt tag
 
-How It's Made:
-Tech used: HTML, CSS, JavaScript, Framework of choice
+## How It's Made:
+I used HTML to create the structure, trying to be as semantically accurate as possible.
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+**Tech used:** HTML, CSS, JavaScript
 
-Optimizations
-(optional)
+## Optimizations
 
-You don't have to include this section but interviewers love that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are GREAT to bring up in interviews and you can use this section as reference when studying for technical interviews!
+-Finish the logic for the situation that arises when a tie between cards occurs
+-Change the scoring to reflect the size of one's deck after they have won a hand and claimed the cards involved
+-Make the initial DOM load more aesthetically pleasing.
+-Create the styling for 
 
-Lessons Learned:
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those whoa this is awesome or fuck yeah I did it! moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+## Lessons Learned:
 
-Examples:
-Take a look at these couple examples that I have in my own portfolio:
-
-Palettable: https://github.com/alecortega/palettable
-
-Twitter Battle: https://github.com/alecortega/twitter-battle
-
-Patch Panel: https://github.com/alecortega/patch-panel
+Small styling changes can be done in the browser using the inspect tool.
